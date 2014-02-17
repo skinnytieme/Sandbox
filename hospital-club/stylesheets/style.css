@@ -706,21 +706,12 @@ a.footer-login:hover {
 	    font-weight: normal;
 	    font-style: normal; 
 	     -webkit-font-smoothing: antialiased !important;
-	}
-	
-	@font-face {
-	    font-family: 'Fancy Light';
-	    src: url('../fonts/Museo100-Regular.otf');
-	    font-weight: normal;
-	    font-style: normal; 
-	     -webkit-font-smoothing: antialiased !important;
 	}	
-	
 		
 	@font-face {
-	    font-family: 'Fancy Bold';
+	    font-family: 'Fancy';
 	    src: url('../fonts/Museo700-Regular.otf');
-	    font-weight: normal;
+	    font-weight: bold;
 	    font-style: normal; 
 	     -webkit-font-smoothing: antialiased !important;
 	}	
