@@ -46,6 +46,23 @@ $(document).ready(function() {
         }               
     });
     
+jQuery(document).ready(function ($) {
+    var tabbedNav = $("#tabbed-facilities").zozoTabs({
+    }),
+    getItem = function () {                
+        return $("#tabIndex").val();
+    },
+    next = function (e) {
+        tabbedNav.data("zozoTabs").next();
+    },
+    prev = function (e) {
+        tabbedNav.data("zozoTabs").prev();
+    }
+
+    $(".prevTab").click(prev);
+    $(".nextTab").click(next);
+});    
+    
 
 /* --- Michael's Wizardy (Dropdowns) --- */
 
