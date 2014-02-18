@@ -25,6 +25,8 @@ li {
 	margin: auto;
 	padding-left: 20px;
 	padding-right: 20px;
+	position: relative;
+	height: inherit;
 }
 
 .fancy, header {
@@ -63,6 +65,10 @@ header li {
 
 header a {
 	color: #fff!important;
+}
+
+header a:hover {
+	color: #000!important;
 }
 
 /* Mob Nav */
@@ -299,12 +305,13 @@ header a {
 }
 
 .slider-feature {
-	height: 365px;
+	height: 370px;
 	background-size: cover;
 	background-position: center center;
 	background-repeat: no-repeat;
 	box-shadow: inset 0px 2px 0px black;
 	position: relative;
+	overflow: hidden;
 }
 
 .feature-overlay {
@@ -312,7 +319,7 @@ header a {
 	height: 100%;
 	background-color: rgba(0,0,0,0.78);
 	position: absolute;
-	box-shadow: 0px 0px 0px 1px rgba(255,255,255,0.15);
+	box-shadow: 1px 0px 0px rgba(255,255,255,0.15), -1px 0px 0px rgba(255,255,255,0.15);
 	top: 0;
 	color: #fff;
 	padding: 15px 25px 25px 25px;
@@ -335,6 +342,10 @@ header a {
 
 .feature-overlay span {
 	color: #F4B700;
+}
+
+.feature-overlay-right {
+	right: 0;
 }
 
 a.feature-more {
@@ -495,6 +506,44 @@ a.footer-login:hover {
 }
 
 
+/*--- Sub Page ---*/
+.sub-intro-hero {
+	height: 534px;
+	position: relative;
+	background-position: center center;
+	background-size: cover;
+}
+
+.sub-intro-overlay {
+	float: left;
+	position: absolute;
+	text-align: center;
+	color: #fff;
+	position: relative;
+    top: 40%; 
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+	width: 100%;
+}
+
+.sub-intro-overlay h1 {
+	font-size: 70px;
+	line-height: 60px;
+	font-weight: normal;
+}
+
+.sub-intro-overlay h2 {
+	font-weight: normal;
+	font-size: 22px;
+	color: rgba(255,255,255,0.70);
+	width: 60%;
+	line-height: 26px;
+	margin: auto;
+}
+
+
+
+
 /* #Media Queries
 ================================================== */
 
@@ -587,7 +636,6 @@ a.footer-login:hover {
 			display: inline-block;
 			position: absolute;
 			font-size: 18px;
-			top: 20px;
 			border: 3px solid #fff;
 			border-radius: 100%;
 			width: 40px;

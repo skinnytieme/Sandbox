@@ -34,6 +34,18 @@ $(document).ready(function() {
         type: "css"
         }               
     });
+    
+
+    $("#tabbed-facilities").zozoTabs({
+        theme: "none",
+    
+        animation: {
+        duration: 600,
+        effects: "slideH",
+        type: "css"
+        }               
+    });
+    
 
 /* --- Michael's Wizardy (Dropdowns) --- */
 
