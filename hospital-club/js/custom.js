@@ -41,7 +41,7 @@ $(document).ready(function() {
     
         animation: {
         duration: 600,
-        effects: "slideH",
+        effects: "none",
         }               
     });
     
