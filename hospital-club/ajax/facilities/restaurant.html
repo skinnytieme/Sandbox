@@ -10,6 +10,20 @@
 </section>
 <!--- END: Intro --->
 
+<!--- Events: Tabbed --->
+<div id="tabbed-nav3">
+  <ul class="fancy">
+    <li><a>Spotlight</a></li>
+	<li><a>Recent Events</a></li>
+  </ul>
+  
+  <div>
+	<div data-content-url='ajax/home/bottom/1.html'></div>
+	<div data-content-url='ajax/home/bottom/2.html'></div>
+  </div>
+</div>
+<!--- END Events: Tabbed --->
+
 <section class="intro-slider">	    		    
 	<div class="slider-feature" style="background-image: url('ajax/facilities/assets/restaurant/bg-1.jpg');">
 		<div class="container">
@@ -50,4 +64,18 @@
 		</div>
 	</div>				  
 </section>
+
+<script type="text/javascript">
+
+    $("#tabbed-nav3").zozoTabs({
+        theme: "none",
+    
+        animation: {
+        duration: 400,
+        effects: "slideH",
+        type: "css"
+        }               
+    });
+
+</script>
 	    
