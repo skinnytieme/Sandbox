@@ -546,7 +546,7 @@ a.footer-login:hover {
     top: 50%; 
     transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
-	z-index: 99;
+	z-index: 9;
 	color: #fff;
 	margin-left: 10%;
 	margin-right: 10%;
@@ -675,6 +675,14 @@ a.footer-login:hover {
 			border-color: #000;
 		}
 		
+		.mob-nav:hover > i {
+			color: #fff!important;
+		}
+		
+		.mob-member-nav-open li:hover, .mob-nav-open li:hover {
+			color: #fff;
+		}
+		
 		.mob-nav {
 			left: 40px;
 		}
@@ -760,8 +768,33 @@ a.footer-login:hover {
 			display: none!important;
 		}
 
+		/* Sub Page */
 		
+		.sub-intro-overlay h1 {
+			font-size: 48px;
+		}
 
+		.sub-intro-overlay h2 {
+			font-size: 16px;
+			width: 70%;
+		}	
+		
+		.sub-intro-overlay h1, .sub-intro-overlay h2  {
+			text-shadow: 0px 2px 10px rgba(0,0,0,0.60);
+		}
+		
+		.sub-previous-icon, .sub-next-icon {
+			margin-left: 2%;
+			margin-right: 2%;
+		}
+
+		.sub-intro-overlay {
+			top: 37%;
+		}
+		
+		.sub-intro-hero {
+			height: 500px;
+		}		
 	}	
 	
 	/* -----Tablet Portrait size to standard 960 (devices and browsers)----- */
